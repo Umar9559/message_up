@@ -27,5 +27,12 @@ $(document).ready(function(){
 $(".dropdownbtn").click(function(){
     $('.fortoggle').slideToggle();
   });
+
+  $('.message .close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
+
+
+
 });
 
